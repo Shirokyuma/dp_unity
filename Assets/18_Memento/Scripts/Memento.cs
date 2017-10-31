@@ -2,6 +2,9 @@
 
 namespace Memento
 {
+	/// <summary>
+	/// セーブデータクラス
+	/// </summary>
 	public class Memento
 	{
 		public Memento (int money)

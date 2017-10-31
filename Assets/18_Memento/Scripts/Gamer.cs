@@ -4,6 +4,9 @@ using UniRx;
 
 namespace Memento
 {
+	/// <summary>
+	/// ゲーム実行クラス.
+	/// </summary>
 	public class Gamer
 	{
 		private System.Random random = new System.Random ();
@@ -20,6 +23,11 @@ namespace Memento
 
 		public ReactiveProperty<int> DiceResult { get; private set; }
 
+		/// <summary>
+		/// 賭け実行.
+		/// </summary>
+		/// <returns>The bet.</returns>
+		/// <param name="money">Money.</param>
 		public void Bet (int money)
 		{
 			this.CurDice = random.Next (6) + 1;
